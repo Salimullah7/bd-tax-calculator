@@ -83,7 +83,7 @@ app.post('/calculate', async (req, res) => {
     text: report
   });
 
-  res.json({ message: \`✅ Tax report emailed to \${email}\` });
+res.json({ message: `✅ Tax report emailed to ${email}` });
 });
 
 app.listen(process.env.PORT || 3000, () => {
