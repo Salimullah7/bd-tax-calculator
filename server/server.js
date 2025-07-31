@@ -77,7 +77,7 @@ app.post('/calculate', async (req, res) => {
   });
 
   await transporter.sendMail({
-    from: \`BD Tax App <\${process.env.SMTP_EMAIL}>\`,
+    from: `BD Tax App <${process.env.SMTP_EMAIL}>`,
     to: email,
     subject: 'Your Bangladesh Tax Calculation Report',
     text: report
